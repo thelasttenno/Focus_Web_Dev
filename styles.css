@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(46,46,177,1) 35%, rgba(0,212,255,1) 100%);
   font-family: 'Arimo', sans-serif;
   font-family: Arial;
   color: white;
 	/* font-size: 34px; */
   text-align: center;
   margin: 50px;
+  background-image: url(photos/hdd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+text {
+  color: white;
 }
 header {
   padding-top: 0px;
@@ -22,8 +26,8 @@ section {
   padding-bottom: 0px;
 }
 footer {
-  margin-top: 90px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .premotion {
   margin-bottom: 0px;
@@ -32,6 +36,7 @@ h1 {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
+  margin-top: 0px;
 }
 h2 {
   font-size: 25px;
@@ -42,6 +47,9 @@ h3 {
   font-size: 14px;
   font-weight: 700;
   line-height: 15.4px;
+}
+h4 {
+  margin-top: 0px;
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -61,7 +69,8 @@ pre {
   line-height: 18.5714px;
 }
 img {
-  width: 400px;
+  width: 600px;
+  height: 400px;
 }
 a:link,
 a:focus,
@@ -80,7 +89,6 @@ a:visited {
 	display: table;   /* Allow the centering to work */
 	margin: 0 auto;
 }
-
 ul.horizontal-list {
 	min-width: 30px;
 	list-style: none;
@@ -90,24 +98,11 @@ ul.horizontal-list li {
 	display: inline-block;
   text-align: center;
 }
-.WIP {
-  color: White;
+.horizontal-list h3 {
+  text-decoration: underline;
 }
-.projects {
-  color: Orange;
 }
 .Title {
-  color: Orange;
-  text-decoration: underline;
-}
-.pages {
-  color: Orange;
-}
-.projects {
-  color: Orange;
-  text-decoration: underline;
-}
-.horizontal-list h3 {
   text-decoration: underline;
 }
 .navi-box {
@@ -135,12 +130,22 @@ li:hover {
 }
 .navi-button {
   padding: 0px 15px;
+  margin: 30px;
 }
 .text-block {
   margin: 30px 160px;
 }
-.container {
+.container1 {
   margin: 0 auto;
+  text-align: center;
+}
+}
+.container2 {
+  position: relative;
+  margin: 0 600;
+  text-align: center;
+  width:500px;
+  display: inline-block;
 }
 div {
   margin: 0 auto;
@@ -150,13 +155,13 @@ div {
   background-repeat: repeat;
   background-size: cover;
 }
-.banner {
+.banner1 {
   min-height: 140px;
   background-image: url(photos/abstract.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner1 {
+.banner {
   min-height: 140px;
   background-image: url(photos/markus-spiske.jpg);
   background-repeat: no-repeat;
@@ -176,7 +181,10 @@ div {
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  -webkit-box-shadow: inset 0px 5px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 5px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 5px 13px 0px rgba(0,0,0,0.75);
 }
 
 /* Set a specific color for each brand */
@@ -197,7 +205,14 @@ div {
   background: red;
   color: white;
 }
-/* github */
+.fa-git {
+  background: red;
+  color: white;
+}
+.fa-gitlab {
+  background: orange;
+  color: white;
+}
 .fa-github {
   background: purple;
   color: white;
