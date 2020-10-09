@@ -8,6 +8,7 @@ body {
   font-family: Arial;
   color: #999999;
   background-image: url(css/coast.jpg);
+  background-image: url(../css/coast.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
