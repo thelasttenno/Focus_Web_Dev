@@ -1,0 +1,27 @@
+section {
+  /* margin-top: 50px; */
+  text-align: center;
+}
+
+section div {
+  max-height: 12rem;
+  z-index: -1;
+}
+
+section div img {
+  max-height: 30rem;
+  width: 100%;
+}
+
+section h1 {
+  color: white;
+  -webkit-text-stroke: 1px #black;
+  text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 40px;
+  padding-bottom: 12rem;
+}
