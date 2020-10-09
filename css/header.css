@@ -170,7 +170,7 @@ body {
 .header.menu-opened {
   height: 100%;
   background-color: #000;
-  background-image: url(/css/photos/Black_Lotus_Background.png);
+  background-image: url(css/photos/Black_Lotus_Background.png);
   transition: all 0.3s ease-in, background 0.0s ease-in;
   transition-delay: 0.25s;
   background-position: center;
@@ -180,7 +180,7 @@ body {
 .header.menu-opened:before {
   height: 100%;
   background-color: #000;
-  background-image: url(/css/photos/Black_Lotus_Background.png);
+  background-image: url(css/photos/Black_Lotus_Background.png);
   background-position: center;
 }
 
