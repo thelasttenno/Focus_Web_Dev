@@ -4,7 +4,7 @@ section {
 }
 
 section div {
-  height: 12rem;
+  height: 13rem;
   z-index: -1;
 }
 
@@ -13,7 +13,7 @@ section div img {
   width: 100%;
 }
 
-section h1 {
+.title {
   color: white;
   -webkit-text-stroke: 1px #black;
   text-shadow:
@@ -23,5 +23,34 @@ section h1 {
     -1px 1px 0 #000,
     1px 1px 0 #000;
   font-size: 40px;
-  padding-bottom: 12rem;
+  padding-bottom: 9rem;
+}
+
+.content {
+  background-image: url(/css/photos/Lotus_HD.jpg);
+  background-size: cover;
+  color: black;
+  text-shadow:
+    2px 2px 0 #F9F6EF,
+    -1px -1px 0 #F9F6EF,
+    1px -1px 0 #F9F6EF,
+    -1px 1px 0 #F9F6EF,
+    1px 1px 0 #F9F6EF;
+  font-size: 18.5px;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
