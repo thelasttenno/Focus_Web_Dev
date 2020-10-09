@@ -27,7 +27,7 @@ section div img {
 }
 
 .content {
-  background-image: url(css/photos/Lotus_HD.jpg);
+  background-image: url(/css/Lotus_HD.jpg);
   background-size: cover;
   color: black;
   text-shadow:
