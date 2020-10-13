@@ -169,9 +169,9 @@ body {
 
 .header.menu-opened {
   height: 100%;
-  background-color: #000;
-  background-image: url(../css/Black_Lotus_Background.png);
-  background-image: url(css/Black_Lotus_Background.png);
+  /* background-color: #000; */
+  background-image: url(../css/Black_Lotus_Logo.png);
+  background-image: url(/css/Black_Lotus_Logo.png);
   transition: all 0.3s ease-in, background 0.0s ease-in;
   transition-delay: 0.25s;
   background-position: center;
@@ -181,8 +181,8 @@ body {
 .header.menu-opened:before {
   height: 100%;
   background-color: #000;
-  background-image: url(../css/Black_Lotus_Background.png);
-  background-image: url(css/Black_Lotus_Background.png);
+  background-image: url(../css/Black_Lotus_Logo.png);
+  background-image: url(/css/Black_Lotus_Logo.png);
   background-position: center;
 }
 
