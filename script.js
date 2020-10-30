@@ -11,7 +11,7 @@ const setAndShow = (c) => {
 /// load a tile layer
 //////////////////////////////////////////
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Tiles by <a href="https://openstreetmap.org">openstreetmap</a>, Data by <a href="TrailForks">TrailForks</a>',
+  attribution: 'Tiles by <a href="https://openstreetmap.org">openstreetmap</a>, Data by <a href="https://www.trailforks.com/">TrailForks</a> and Images from <a href="https://www.pinkbike.com/photo/podlist/"',
   maxZoom: 17,
   minZoom: 9
 }).addTo(map); //adds  object to map
@@ -61,7 +61,7 @@ $.getJSON("map2.geojson", function(data) { // load GeoJSON from an external file
       var marker = L.marker([beg1, end1], { //create icons
         icon: icon4
       });
-      //creates popup!
+      //creates popup and sidebar content
       marker.bindPopup("<b>Name:</b> " + ' <a href =' + feature.properties.url + '>' +
         feature.properties.name + '</a>' + '<br>' + '<button type="button" name="button" onClick="setAndShow(\'' + feature.properties.name.replace(/(\r\n|\n|\r)/gm, "") + '\' +  \'' + '<br>' + "Difficulty: " + feature.properties.difficulty + '\'+\'' + '<br>' + "Runs: " + feature.properties.direction + '\'+\'' + '<br>' + "<a href=" +
         feature.properties.url + ">Veiw details</a>" + '\')">Click Here to Open Side Panel</button>');
@@ -110,7 +110,7 @@ $.getJSON("map2.geojson", function(data) { // load GeoJSON from an external file
       }
     },
     onEachFeature: function(feature, layer) { // create onEachFeature function (it loops through till it has gone through all the objects in the geojson)
-      //creates popup!
+      //creates popup and sidebar content
       layer.bindPopup("<b>Name:</b> " + ' <a href =' + feature.properties.url + '>' +
         feature.properties.name + '</a>' + '<br>' + '<button type="button" name="button" onClick="setAndShow(\'' + feature.properties.name.replace(/(\r\n|\n|\r)/gm, "") + '\' +  \'' + '<br>' + "Difficulty: " + feature.properties.difficulty + '\'+\'' + '<br>' + "Runs: " + feature.properties.direction + '\'+\'' + '<br>' + "<a href=" +
         feature.properties.url + ">Veiw details</a>" + '\')">Click Here to Open Side Panel</button>');
