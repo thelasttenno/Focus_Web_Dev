@@ -1,6 +1,10 @@
 #sidebar {
+  color: white;
   text-align: center;
   font-size: 50px;
   text-shadow: white;
-  background-image: url(https://ep1.pinkbike.org/p6pb18890481/p5pb18890481.jpg)
+  background-image: url(https://ep1.pinkbike.org/p6pb18890481/p5pb18890481.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
