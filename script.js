@@ -11,7 +11,7 @@ const setAndShow = (c) => {
 /// load a tile layer
 //////////////////////////////////////////
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Tiles by <a href="https://openstreetmap.org">openstreetmap</a>, Data by <a href="https://www.trailforks.com/">TrailForks</a> and Images from <a href="https://www.pinkbike.com/photo/podlist/"',
+  attribution: 'Tiles by <a href="https://openstreetmap.org">openstreetmap</a>, Data by <a href="https://www.trailforks.com/">TrailForks</a> and Images from <a href="https://www.pinkbike.com/photo/podlist/">PinkBike</a>',
   maxZoom: 17,
   minZoom: 9
 }).addTo(map); //adds  object to map
